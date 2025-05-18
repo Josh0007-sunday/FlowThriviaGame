@@ -277,6 +277,11 @@ export function GamePage() {
             <p className="text-xl text-white">
               Connect your wallet to start your trivia adventure! 🎮
             </p>
+            <img 
+              src="/src/assets/connect.jpg" 
+              alt="Connect Wallet" 
+              className="mt-6 mx-auto max-w-md rounded-lg shadow-lg"
+            />
           </div>
         ) : isLoading ? (
           <div className="text-center py-12 bg-white/10 backdrop-blur-sm rounded-xl p-8">
