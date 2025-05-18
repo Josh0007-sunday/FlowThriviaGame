@@ -29,7 +29,7 @@ function App() {
         src={gameAudio} 
         loop 
         controls
-        className="fixed bottom-4 right-4 z-50 bg-white/10 backdrop-blur-sm rounded-lg p-2"
+        className="fixed bottom-4 right-4 z-50 bg-white/10 backdrop-blur-sm rounded-lg p-2 w-[calc(100%-2rem)] sm:w-auto max-w-[300px] shadow-lg border border-white/20"
       />
       <Routes>
         <Route path="/admin" element={<AdminPage />} />

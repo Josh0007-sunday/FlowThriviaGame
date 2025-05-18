@@ -281,7 +281,7 @@ export function GamePage() {
             <img 
               src={connectImage} 
               alt="Connect Wallet" 
-              className="mt-6 mx-auto max-w-md rounded-lg shadow-lg"
+              className="mt-6 mx-auto w-[90%] sm:w-[80%] md:max-w-md rounded-lg shadow-lg border border-white/20 hover:scale-[1.02] transition-transform duration-300"
             />
           </div>
         ) : isLoading ? (
