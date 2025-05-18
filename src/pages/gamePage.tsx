@@ -64,7 +64,7 @@ export function GamePage() {
               return questions
             }
           `,
-          args: (arg: any, t: any) => [],
+          args: () => [],
         });
         
         console.log("Raw result from contract:", result);

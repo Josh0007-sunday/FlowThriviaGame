@@ -10,12 +10,14 @@ export function WalletButton() {
     </div>
   );
 
+  const address = user?.addr || '';
+
   return (
     <div>
       {user?.loggedIn ? (
         <div className="flex items-center gap-4">
           <div className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 text-white">
-            <span className="text-sm">Adventurer: {user.addr.slice(0, 6)}...{user.addr.slice(-4)}</span>
+            <span className="text-sm">Adventurer: {address.slice(0, 6)}...{address.slice(-4)}</span>
           </div>
           <button 
             onClick={fcl.unauthenticate}
