@@ -6,6 +6,7 @@ import type { Question, PlayerStats } from "../types";
 import triviaImage from "../assets/trivia.jpg";
 import bgImage from "../assets/bg.svg";
 import Confetti from 'react-confetti';
+import connectImage from "../assets/connect.jpg";
 
 export function GamePage() {
   const { user } = useCurrentUser();
@@ -278,7 +279,7 @@ export function GamePage() {
               Connect your wallet to start your trivia adventure! 🎮
             </p>
             <img 
-              src="/src/assets/connect.jpg" 
+              src={connectImage} 
               alt="Connect Wallet" 
               className="mt-6 mx-auto max-w-md rounded-lg shadow-lg"
             />
